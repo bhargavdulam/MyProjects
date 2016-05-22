@@ -1,2 +1,2 @@
 ## License
-ISKOOLU
+www.ISKOOLU.com
