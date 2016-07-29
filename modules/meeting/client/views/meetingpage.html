@@ -1,0 +1,33 @@
+<section>
+  <div class="page-header">
+    <h1>Click On The Course To Join Meeting</h1>
+  </div>
+
+<div class="container">
+
+  <ul class="nav nav-pills nav-stacked">
+   
+    <li><a ng-repeat="course in vm.courses" ui-sref="meeting.view({ courseId: course._id })" </li>
+    <h3 ng-bind="course.title"> </h3>
+    </a>
+  </ul>
+</div>
+  
+
+
+  <!--<div class="list-group" style="width: 287px;">
+    <a ng-repeat="course in vm.courses" ui-sref="meeting.view({ courseId: course._id })" class="list-group-item">
+      <small class="list-group-item-text">
+       <h4 class="list-group-item-heading" ng-bind="course.title"></h4>
+        by
+        <h4><span ng-if="course.user" ng-bind="course.user.displayName"></span></h4>
+        <span ng-if="!course.user">Deleted User</span>
+      </small>
+     
+     <p class="list-group-item-text" ng-bind="course.content"></p>
+    </a>
+  </div>-->
+  <!--<div class="alert alert-warning text-center" ng-if="vm.courses.$resolved && !vm.courses.length">
+    No courses yet, why don't you <a ui-sref="courses.create">create one</a>?
+  </div>-->
+</section>
